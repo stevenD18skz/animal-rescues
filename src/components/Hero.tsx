@@ -14,6 +14,9 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-[#5A5652] leading-relaxed max-w-xl">
           Rescatada de las calles, Taylor es una gatita valiente que actualmente lucha contra tumores cancerígenos. Necesitamos tu apoyo urgente para salvarla, encontrar un cálido hogar de paso y darle la vida que merece.
         </p>
+        <p className="text-sm text-[#8B857E] italic font-medium max-w-lg border-l-2 border-[#D36B42] pl-4">
+          Somos dos estudiantes de Ingeniería de Sistemas que, aunque no podemos financiar su tratamiento por nuestra cuenta, dedicamos nuestro conocimiento para ser su voz y buscarle una oportunidad.
+        </p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
           <Link 
             href="#help"

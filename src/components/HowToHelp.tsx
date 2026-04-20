@@ -102,7 +102,7 @@ export default function HowToHelp() {
               {/* Nequi Monica */}
               <div className="bg-white p-8 rounded-3xl border border-[#EAE4D9] shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center group/card">
                 <div className="w-20 h-12 relative mb-6 group-hover/card:scale-110 transition-transform">
-                  <Image src="/logos/nequi-logo.png" alt="Nequi Logo" fill className="object-contain" />
+                  <Image src="/logos/nequi-logo.png" alt="Nequi Logo" fill sizes="80px" className="object-contain" />
                 </div>
                 <h4 className="font-bold text-xl text-[#2C2A28] mb-1">Monica Cortes</h4>
                 <p className="text-sm text-[#A39E98] mb-6 font-medium uppercase tracking-wider">Gestor de Ayuda</p>
@@ -132,7 +132,7 @@ export default function HowToHelp() {
               {/* Nequi Celeste */}
               <div className="bg-white p-8 rounded-3xl border border-[#EAE4D9] shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center group/card">
                 <div className="w-20 h-12 relative mb-6 group-hover/card:scale-110 transition-transform">
-                  <Image src="/logos/nequi-logo.png" alt="Nequi Logo" fill className="object-contain" />
+                  <Image src="/logos/nequi-logo.png" alt="Nequi Logo" fill sizes="80px" className="object-contain" />
                 </div>
                 <h4 className="font-bold text-xl text-[#2C2A28] mb-1">Celeste Reina</h4>
                 <p className="text-sm text-[#A39E98] mb-6 font-medium uppercase tracking-wider">Rescatista</p>
@@ -150,7 +150,7 @@ export default function HowToHelp() {
               {/* Nu Brayan Narvaez */}
               <div className="bg-white p-8 rounded-3xl border border-[#EAE4D9] shadow-sm hover:shadow-md transition-all flex flex-col items-center text-center group/card">
                 <div className="w-20 h-12 relative mb-6 group-hover/card:scale-110 transition-transform">
-                  <Image src="/logos/Nubank-logo.png" alt="Nubank Logo" fill className="object-contain" />
+                  <Image src="/logos/Nubank-logo.png" alt="Nubank Logo" fill sizes="80px" className="object-contain" />
                 </div>
                 <h4 className="font-bold text-xl text-[#2C2A28] mb-1">Brayan Narvaez</h4>
                 <p className="text-sm text-[#A39E98] mb-6 font-medium uppercase tracking-wider">Gestor de Ayuda (Nu)</p>
