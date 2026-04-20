@@ -15,14 +15,12 @@ export default function Hero() {
           Rescatada de las calles, Taylor es una gatita valiente que actualmente lucha contra tumores cancerígenos. Necesitamos tu apoyo urgente para salvarla, encontrar un cálido hogar de paso y darle la vida que merece.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <a 
-            href="https://linktr.ee/Ayudagatica"
-            target="_blank"
-            rel="noopener noreferrer" 
-            className="bg-[#D36B42] hover:bg-[#B35834] text-[#F4F1EA] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 shadow-lg hover:shadow-xl "
+          <Link 
+            href="#help"
+            className="bg-[#D36B42] hover:bg-[#B35834] text-[#F4F1EA] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Hacer una Donación
-          </a>
+          </Link>
           <Link 
             href="#story" 
             className="border-2 border-[#2C2A28] hover:bg-[#2C2A28] hover:text-[#F4F1EA] text-[#2C2A28] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 "

@@ -26,14 +26,12 @@ export default function Header() {
           </a>
         </div>
         
-        <a 
-          href="https://linktr.ee/Ayudagatica" 
-          target="_blank"
-          rel="noopener noreferrer"
+        <Link 
+          href="#help" 
           className="bg-[#3F787A] hover:bg-[#2A5253] text-[#F4F1EA] px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg"
         >
           Ayudar a Taylor
-        </a>
+        </Link>
       </div>
     </header>
   );
