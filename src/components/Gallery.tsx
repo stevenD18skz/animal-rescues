@@ -50,7 +50,7 @@ export default function Gallery() {
               style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}
             >
               {media.type === 'image' ? (
-                <Image src={media.src} alt={`Galería de Taylor ${i+1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" priority={i === 0} />
+                <Image src={media.src} alt={`Galería de Taylor ${i+1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" priority={i === 0 || i === 4} />
               ) : (
                 <>
                   <video src={media.src} preload="metadata" muted playsInline className="w-full h-full object-cover pointer-events-none" />

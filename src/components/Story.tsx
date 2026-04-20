@@ -15,7 +15,7 @@ export default function Story() {
       date: "18 de Abril, 2026",
       title: "Diagnóstico Médico",
       description: "Rescatamos oficialmente a la gatica y la llevamos al veterinario. Allí le hicieron una evaluación general y le descubrieron los tumores cancerígenos.",
-      media: { type: "image", src: "/taylor/taylor-image-4.jpeg" }
+      media: { type: "video", src: "/taylor/taylor-video-18.mp4" }
     },
     {
       step: "03",
@@ -26,9 +26,16 @@ export default function Story() {
     },
     {
       step: "04",
+      date: "20 de Abril, 2026",
+      title: "Exámenes y Preparación",
+      description: "Hoy se llevaron a cabo exámenes de sangre y revisiones completas para descartar otras enfermedades y asegurar que Taylor esté lista para su cirugía. Seguimos recaudando los fondos necesarios para cubrir el procedimiento.",
+      media: { type: "image", src: "/taylor/taylor-image-12.jpeg" }
+    },
+    {
+      step: "05",
       date: "El Futuro...",
       title: "La Historia por Venir",
-      description: "La cirugía y la recuperación serán largas, pero no nos rendimos. Con tu ayuda, el próximo capítulo será su sanación y la búsqueda de su familia definitiva.",
+      description: "La cirugía y la recuperación serán los siguientes pasos. Con tu ayuda, el próximo capítulo será su sanación definitiva y la búsqueda de un hogar para siempre.",
       media: null
     }
   ];
