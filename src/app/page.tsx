@@ -11,8 +11,8 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Story />
         <HowToHelp />
+        <Story />
         <Gallery />
       </main>
       <Footer />

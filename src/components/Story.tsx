@@ -33,7 +33,7 @@ export default function Story() {
   ];
 
   return (
-    <section id="story" className="bg-[#EAE4D9] py-24 overflow-hidden">
+    <section id="story" className="bg-[#F4F1EA] py-24 overflow-hidden">
       {/* Parte Inicial de la Historia */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
         <div className="w-full md:w-5/12 space-y-8 animate-fade-in-up" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}>

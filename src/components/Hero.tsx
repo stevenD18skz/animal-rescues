@@ -18,13 +18,13 @@ export default function Hero() {
             href="https://linktr.ee/Ayudagatica"
             target="_blank"
             rel="noopener noreferrer" 
-            className="bg-[#D36B42] hover:bg-[#B35834] text-[#F4F1EA] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+            className="bg-[#D36B42] hover:bg-[#B35834] text-[#F4F1EA] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 shadow-lg hover:shadow-xl "
           >
             Hacer una Donación
           </a>
           <Link 
             href="#story" 
-            className="border-2 border-[#2C2A28] hover:bg-[#2C2A28] hover:text-[#F4F1EA] text-[#2C2A28] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 hover:-translate-y-1"
+            className="border-2 border-[#2C2A28] hover:bg-[#2C2A28] hover:text-[#F4F1EA] text-[#2C2A28] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 "
           >
             Conoce su Historia
           </Link>
