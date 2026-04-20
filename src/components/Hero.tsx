@@ -31,7 +31,7 @@ export default function Hero() {
         </div>
       </div>
       <div className="flex-1 w-full relative animate-fade-in" style={{ animationDelay: '400ms', animationFillMode: 'both' }}>
-        <div className="aspect-[4/5] md:aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl group">
+        <div className="aspect-4/5 md:aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl group">
           <div className="absolute inset-0 bg-[#D36B42] mix-blend-multiply opacity-10 z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
           <img
             src="/taylor/taylor-hero.jpeg"
