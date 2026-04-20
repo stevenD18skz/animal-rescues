@@ -1,13 +1,13 @@
 export default function Gallery() {
   const medias = [
-    { type: 'image', src: '/taylor/WhatsApp Image 2026-04-19 at 11.29.26 PM (1).jpeg' },
-    { type: 'video', src: '/taylor/WhatsApp Video 2026-04-19 at 11.29.26 PM (1).mp4' },
-    { type: 'image', src: '/taylor/WhatsApp Image 2026-04-19 at 11.29.26 PM (2).jpeg' },
-    { type: 'video', src: '/taylor/WhatsApp Video 2026-04-19 at 11.29.27 PM (1).mp4' },
-    { type: 'image', src: '/taylor/WhatsApp Image 2026-04-19 at 11.29.27 PM (1).jpeg' },
-    { type: 'video', src: '/taylor/WhatsApp Video 2026-04-19 at 11.29.28 PM (1).mp4' },
-    { type: 'image', src: '/taylor/WhatsApp Image 2026-04-19 at 11.29.29 PM.jpeg' },
-    { type: 'video', src: '/taylor/WhatsApp Video 2026-04-19 at 11.29.30 PM (2).mp4' },
+    { type: 'image', src: '/taylor/taylor-image-1.jpeg' },
+    { type: 'video', src: '/taylor/taylor-video-2.mp4' },
+    { type: 'image', src: '/taylor/taylor-image-2.jpeg' },
+    { type: 'video', src: '/taylor/taylor-video-3.mp4' },
+    { type: 'image', src: '/taylor/taylor-image-3.jpeg' },
+    { type: 'video', src: '/taylor/taylor-video-4.mp4' },
+    { type: 'image', src: '/taylor/taylor-image-4.jpeg' },
+    { type: 'video', src: '/taylor/taylor-video-5.mp4' },
   ];
 
   return (

@@ -14,12 +14,14 @@ export default function Hero() {
           Rescatada de las calles, Taylor es una gatita valiente que actualmente lucha contra tumores cancerígenos. Necesitamos tu apoyo urgente para salvarla, encontrar un cálido hogar de paso y darle la vida que merece.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-          <Link 
-            href="#help" 
+          <a 
+            href="https://linktr.ee/Ayudagatica"
+            target="_blank"
+            rel="noopener noreferrer" 
             className="bg-[#D36B42] hover:bg-[#B35834] text-[#F4F1EA] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
           >
             Hacer una Donación
-          </Link>
+          </a>
           <Link 
             href="#story" 
             className="border-2 border-[#2C2A28] hover:bg-[#2C2A28] hover:text-[#F4F1EA] text-[#2C2A28] px-8 py-4 rounded-full text-lg font-medium text-center transition-all duration-300 hover:-translate-y-1"
@@ -32,7 +34,7 @@ export default function Hero() {
         <div className="aspect-[4/5] md:aspect-square rounded-[3rem] overflow-hidden relative shadow-2xl group">
           <div className="absolute inset-0 bg-[#D36B42] mix-blend-multiply opacity-10 z-10 group-hover:opacity-0 transition-opacity duration-700"></div>
           <img
-            src="/taylor/WhatsApp Image 2026-04-19 at 11.29.25 PM.jpeg"
+            src="/taylor/taylor-hero.jpeg"
             alt="Taylor - Imagen Promocional"
             className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-700"
           />

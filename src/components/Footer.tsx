@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex gap-8">
           <a href="#" className="hover:text-[#E5A93D] hover:-translate-y-1 transition-all duration-300">Instagram</a>
           <a href="#" className="hover:text-[#E5A93D] hover:-translate-y-1 transition-all duration-300">Facebook</a>
-          <a href="#" className="hover:text-[#E5A93D] hover:-translate-y-1 transition-all duration-300">WhatsApp</a>
+          <a href="https://wa.me/573243892368?text=Hola,%20vengo%20desde%20la%20pagina%20de%20Taylor" target="_blank" rel="noopener noreferrer" className="hover:text-[#E5A93D] hover:-translate-y-1 transition-all duration-300">WhatsApp</a>
         </div>
         <p className="text-sm">
           © {new Date().getFullYear()} Ayudando a Taylor. Todos los derechos reservados.

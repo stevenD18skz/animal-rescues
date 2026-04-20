@@ -25,9 +25,9 @@ export default function HowToHelp() {
           <p className="text-[#5A5652] mb-8 flex-1">
             Los tratamientos oncológicos y cirugías son de alto costo. Tu aporte económico nos permite pagar sus facturas veterinarias y medicamentos.
           </p>
-          <button className="w-full bg-[#D36B42] text-[#F4F1EA] py-3 rounded-xl font-medium hover:bg-[#B35834] transition-colors shadow-md hover:shadow-lg">
+          <a href="https://linktr.ee/Ayudagatica" target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-[#D36B42] text-[#F4F1EA] py-3 rounded-xl font-medium hover:bg-[#B35834] transition-colors shadow-md hover:shadow-lg">
             Donar Ahora
-          </button>
+          </a>
         </div>
 
         {/* Card 2 */}
@@ -44,9 +44,9 @@ export default function HowToHelp() {
           <p className="text-[#5A5652] mb-8 flex-1">
             Taylor necesita un ambiente tranquilo y limpio donde recuperarse sin estrés. Si tienes un espacio seguro, serás vital para su sanación.
           </p>
-          <button className="w-full border-2 border-[#3F787A] text-[#3F787A] py-3 rounded-xl font-medium hover:bg-[#3F787A] hover:text-[#F4F1EA] transition-colors">
+          <a href="https://wa.me/573243892368?text=Hola,%20quiero%20ofrecer%20un%20hogar%20de%20paso%20para%20la%20gatita%20Taylor" target="_blank" rel="noopener noreferrer" className="block text-center w-full border-2 border-[#3F787A] text-[#3F787A] py-3 rounded-xl font-medium hover:bg-[#3F787A] hover:text-[#F4F1EA] transition-colors">
             Ofrecer Hogar
-          </button>
+          </a>
         </div>
 
         {/* Card 3 */}
@@ -64,9 +64,9 @@ export default function HowToHelp() {
           <p className="text-[#EAE4D9] mb-8 flex-1 relative z-10">
             El objetivo final es encontrar a alguien con un corazón inmenso que quiera adoptar a Taylor y darle amor incondicional por el resto de su vida.
           </p>
-          <button className="w-full bg-[#F4F1EA] text-[#6B7A50] py-3 rounded-xl font-medium hover:bg-white transition-colors relative z-10 shadow-md">
-            Formulario de Adopción
-          </button>
+          <a href="https://wa.me/573243892368?text=Hola,%20me%20interesa%20adoptar%20a%20la%20gatita%20Taylor" target="_blank" rel="noopener noreferrer" className="block text-center w-full bg-[#F4F1EA] text-[#6B7A50] py-3 rounded-xl font-medium hover:bg-white transition-colors relative z-10 shadow-md">
+            Información de Adopción
+          </a>
         </div>
       </div>
     </section>
