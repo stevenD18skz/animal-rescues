@@ -1,4 +1,5 @@
 import { Heart } from "lucide-react";
+import Image from "next/image";
 
 export default function Story() {
   const timelineEvents = [
@@ -94,9 +95,9 @@ export default function Story() {
                 {/* Multimedia (Imagen/Video) */}
                 <div className={`w-full md:w-5/12 pl-24 md:pl-0 animate-fade-in-up`} style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}>
                   {event.media ? (
-                    <div className="aspect-square rounded-full overflow-hidden border-8 border-[#F4F1EA] shadow-xl relative group bg-black">
+                    <div className="relative aspect-square rounded-full overflow-hidden border-8 border-[#F4F1EA] shadow-xl group bg-black">
                       {event.media.type === 'image' ? (
-                        <img src={event.media.src} alt={event.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
+                        <Image src={event.media.src} alt={event.title} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover transform group-hover:scale-110 transition-transform duration-700" />
                       ) : (
                         <video src={event.media.src} autoPlay muted loop playsInline className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                       )}

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { X, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
+import { X, ChevronLeft, ChevronRight, PlayCircle } from "lucide-react";
 
 export default function Gallery() {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
@@ -45,13 +46,18 @@ export default function Gallery() {
             <div 
               key={i} 
               onClick={() => setSelectedIndex(i)}
-              className="aspect-square rounded-3xl overflow-hidden border-2 border-[#5A5652] opacity-80 hover:opacity-100 transition-all duration-500 hover:scale-105 hover:border-[#E5A93D] animate-fade-in-up bg-black cursor-pointer"
+              className="relative aspect-square rounded-3xl overflow-hidden border-2 border-[#5A5652] opacity-80 hover:opacity-100 transition-all duration-500 hover:scale-105 hover:border-[#E5A93D] animate-fade-in-up bg-black cursor-pointer group"
               style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}
             >
               {media.type === 'image' ? (
-                <img src={media.src} alt={`Galería de Taylor ${i+1}`} className="w-full h-full object-cover" />
+                <Image src={media.src} alt={`Galería de Taylor ${i+1}`} fill sizes="(max-width: 768px) 50vw, 25vw" className="object-cover" priority={i === 0} />
               ) : (
-                <video src={media.src} autoPlay muted loop playsInline className="w-full h-full object-cover pointer-events-none" />
+                <>
+                  <video src={media.src} preload="metadata" muted playsInline className="w-full h-full object-cover pointer-events-none" />
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/10 transition-colors">
+                    <PlayCircle className="w-12 h-12 text-white/80 group-hover:text-white group-hover:scale-110 transition-all" />
+                  </div>
+                </>
               )}
             </div>
           ))}
@@ -93,11 +99,15 @@ export default function Gallery() {
             onClick={(e) => e.stopPropagation()} 
           >
             {medias[selectedIndex].type === 'image' ? (
-              <img 
-                src={medias[selectedIndex].src} 
-                alt="Taylor ampliada" 
-                className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl select-none"
-              />
+              <div className="relative w-[90vw] h-[85vh]">
+                <Image 
+                  src={medias[selectedIndex].src} 
+                  alt="Taylor ampliada" 
+                  fill
+                  sizes="90vw"
+                  className="object-contain rounded-lg shadow-2xl select-none"
+                />
+              </div>
             ) : (
               <video 
                 src={medias[selectedIndex].src} 
