@@ -20,9 +20,8 @@ export default function Story() {
         </div>
         <div className="flex-1 w-full relative animate-fade-in" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 40%' }}>
           <div className="aspect-video rounded-3xl overflow-hidden shadow-xl border-8 border-[#F4F1EA] relative z-10 group bg-black">
-             {/* Cambia src="/video1.mp4" por el nombre exacto de tu video */}
              <video
-              src="/video1.mp4"
+              src="/taylor/WhatsApp Video 2026-04-19 at 11.29.25 PM (1).mp4"
               autoPlay
               muted
               loop
