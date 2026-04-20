@@ -1,3 +1,5 @@
+import { Heart } from "lucide-react";
+
 export default function Story() {
   const timelineEvents = [
     {
@@ -33,12 +35,12 @@ export default function Story() {
   return (
     <section id="story" className="bg-[#EAE4D9] py-24 overflow-hidden">
       {/* Parte Inicial de la Historia */}
-      <div className="max-w-5xl mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center gap-16 mb-24">
-        <div className="flex-1 space-y-6 animate-fade-in-up" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#2C2A28]">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row-reverse items-center gap-16 mb-32">
+        <div className="w-full md:w-5/12 space-y-8 animate-fade-in-up" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}>
+          <h2 className="text-4xl md:text-6xl font-serif font-bold text-[#2C2A28] leading-tight">
             La Historia de Taylor
           </h2>
-          <div className="space-y-4 text-lg text-[#5A5652] leading-relaxed">
+          <div className="space-y-6 text-xl text-[#5A5652] leading-relaxed">
             <p>
               Taylor fue encontrada sola y vulnerable. Al rescatarla y brindarle atención médica, el diagnóstico fue desgarrador: tiene tumores cancerígenos que requieren tratamiento inmediato y cirugía especializada.
             </p>
@@ -50,10 +52,11 @@ export default function Story() {
             </p>
           </div>
         </div>
-        <div className="flex-1 w-full relative animate-fade-in" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 40%' }}>
-          <div className="aspect-video rounded-3xl overflow-hidden shadow-xl border-8 border-[#F4F1EA] relative z-10 group bg-black">
+        
+        <div className="w-full md:w-7/12 relative animate-fade-in" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 40%' }}>
+          <div className="aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-[12px] border-[#F4F1EA] relative z-10 group bg-black">
              <video
-              src="/taylor/taylor-video-1.mp4"
+              src="/taylor/taylor-video-12.mp4"
               autoPlay
               muted
               loop
@@ -61,7 +64,7 @@ export default function Story() {
               className="object-cover w-full h-full transform group-hover:scale-105 transition-transform duration-1000"
             />
           </div>
-          <div className="absolute -left-6 -bottom-6 w-full h-full border-4 border-[#D36B42] rounded-3xl z-0 transition-transform duration-500 hover:-translate-x-2 hover:translate-y-2"></div>
+          <div className="absolute -left-8 -bottom-8 w-full h-full border-4 border-[#D36B42] rounded-[2.5rem] z-0 transition-transform duration-500 hover:-translate-x-2 hover:translate-y-2"></div>
         </div>
       </div>
 
@@ -101,9 +104,7 @@ export default function Story() {
                   ) : (
                     <div className="aspect-square rounded-full border-8 border-[#F4F1EA] shadow-xl bg-[#6B7A50] flex flex-col items-center justify-center text-white p-8 text-center relative group overflow-hidden">
                        <div className="absolute inset-0 bg-[#3F787A] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                       <svg className="w-16 h-16 mb-4 relative z-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                      </svg>
+                       <Heart className="w-16 h-16 mb-4 relative z-10 text-white" />
                        <span className="font-serif font-bold text-xl relative z-10">Esperando su final feliz...</span>
                     </div>
                   )}

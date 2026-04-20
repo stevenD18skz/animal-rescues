@@ -1,4 +1,11 @@
+"use client";
+
+import { useState } from "react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
+
 export default function Gallery() {
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+
   const medias = [
     { type: 'image', src: '/taylor/taylor-image-1.jpeg' },
     { type: 'video', src: '/taylor/taylor-video-2.mp4' },
@@ -9,6 +16,20 @@ export default function Gallery() {
     { type: 'image', src: '/taylor/taylor-image-4.jpeg' },
     { type: 'video', src: '/taylor/taylor-video-5.mp4' },
   ];
+
+  const handleNext = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex + 1) % medias.length);
+    }
+  };
+
+  const handlePrev = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (selectedIndex !== null) {
+      setSelectedIndex((selectedIndex - 1 + medias.length) % medias.length);
+    }
+  };
 
   return (
     <section id="gallery" className="py-24 bg-[#2C2A28] text-[#F4F1EA]">
@@ -23,18 +44,76 @@ export default function Gallery() {
           {medias.map((media, i) => (
             <div 
               key={i} 
-              className="aspect-square rounded-3xl overflow-hidden border-2 border-[#5A5652] opacity-80 hover:opacity-100 transition-all duration-500 hover:scale-105 hover:border-[#E5A93D] animate-fade-in-up bg-black"
+              onClick={() => setSelectedIndex(i)}
+              className="aspect-square rounded-3xl overflow-hidden border-2 border-[#5A5652] opacity-80 hover:opacity-100 transition-all duration-500 hover:scale-105 hover:border-[#E5A93D] animate-fade-in-up bg-black cursor-pointer"
               style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 30%' }}
             >
               {media.type === 'image' ? (
-                <img src={media.src} alt="Galería de Taylor" className="w-full h-full object-cover" />
+                <img src={media.src} alt={`Galería de Taylor ${i+1}`} className="w-full h-full object-cover" />
               ) : (
-                <video src={media.src} autoPlay muted loop playsInline className="w-full h-full object-cover" />
+                <video src={media.src} autoPlay muted loop playsInline className="w-full h-full object-cover pointer-events-none" />
               )}
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal / Lightbox */}
+      {selectedIndex !== null && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/95 backdrop-blur-md p-4 md:p-8 animate-fade-in"
+          onClick={() => setSelectedIndex(null)}
+        >
+          {/* Botón de cerrar */}
+          <button 
+            className="absolute top-6 right-6 text-[#A39E98] hover:text-white transition-colors z-50 bg-black/50 p-2 rounded-full"
+            onClick={() => setSelectedIndex(null)}
+          >
+            <X className="w-8 h-8" />
+          </button>
+
+          {/* Controles de navegación */}
+          <button 
+            className="absolute left-2 md:left-8 text-[#A39E98] hover:text-white transition-colors z-50 p-2 bg-black/50 rounded-full hover:scale-110"
+            onClick={handlePrev}
+          >
+            <ChevronLeft className="w-10 h-10" />
+          </button>
+
+          <button 
+            className="absolute right-2 md:right-8 text-[#A39E98] hover:text-white transition-colors z-50 p-2 bg-black/50 rounded-full hover:scale-110"
+            onClick={handleNext}
+          >
+            <ChevronRight className="w-10 h-10" />
+          </button>
+
+          {/* Contenido Principal */}
+          <div 
+            className="relative w-full h-full flex items-center justify-center"
+            onClick={(e) => e.stopPropagation()} 
+          >
+            {medias[selectedIndex].type === 'image' ? (
+              <img 
+                src={medias[selectedIndex].src} 
+                alt="Taylor ampliada" 
+                className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl select-none"
+              />
+            ) : (
+              <video 
+                src={medias[selectedIndex].src} 
+                autoPlay 
+                controls 
+                className="max-w-[90vw] max-h-[85vh] object-contain rounded-lg shadow-2xl"
+              />
+            )}
+          </div>
+          
+          {/* Indicador inferior */}
+          <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-[#F4F1EA] font-medium tracking-widest text-sm bg-black/70 px-6 py-2 rounded-full border border-[#5A5652]">
+            {selectedIndex + 1} / {medias.length}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
