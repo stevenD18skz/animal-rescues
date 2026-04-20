@@ -54,7 +54,7 @@ export default function Story() {
         </div>
         
         <div className="w-full md:w-7/12 relative animate-fade-in" style={{ animationTimeline: 'view()', animationRange: 'entry 10% cover 40%' }}>
-          <div className="aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-[12px] border-[#F4F1EA] relative z-10 group bg-black">
+          <div className="aspect-video rounded-[2.5rem] overflow-hidden shadow-2xl border-12 border-[#F4F1EA] relative z-10 group bg-black">
              <video
               src="/taylor/taylor-video-12.mp4"
               autoPlay
