@@ -33,6 +33,13 @@ export default function Story() {
     },
     {
       step: "05",
+      date: "22 de Abril, 2026",
+      title: "Nutrición y Tratamiento",
+      description: "Iniciamos una dieta premium con Agility Gold para fortalecerla antes de la cirugía. Paralelamente, Taylor comenzó su tratamiento para subir las plaquetas y asegurar que esté en óptimas condiciones para el quirófano.",
+      media: { type: "image", src: "/taylor/cover-21-04.jpeg" }
+    },
+    {
+      step: "06",
       date: "El Futuro...",
       title: "La Historia por Venir",
       description: "La cirugía y la recuperación serán los siguientes pasos. Con tu ayuda, el próximo capítulo será su sanación definitiva y la búsqueda de un hogar para siempre.",
