@@ -51,7 +51,7 @@ export default function HowToHelp() {
                 Los tratamientos oncológicos y cirugías son de alto costo. Tu aporte nos permite cubrir facturas veterinarias y medicamentos vitales.
               </p>
               <div className="mt-auto hidden md:block">
-                <p className="text-[#EAE4D9]/60 text-sm font-medium">Información de contacto directa →</p>
+                <p className="text-[#fcf8f2] text-sm font-medium">Información de contacto directa →</p>
               </div>
             </div>
 
@@ -143,10 +143,10 @@ function DonationDetails({ monicaInfo, copied, copyToClipboard, setSelectedQr }:
       
       <div className="space-y-3">
         <div className="space-y-1">
-          <p className="text-[9px] font-bold uppercase tracking-tighter text-[#EAE4D9]/70 ml-1">Número Nequi</p>
+          <p className="text-[14px] font-bold uppercase tracking-tighter text-white ml-1">Número Nequi</p>
           <button 
             onClick={(e) => { e.stopPropagation(); copyToClipboard(monicaInfo.number); }}
-            className={`flex items-center justify-between w-full px-4 py-3 rounded-xl font-bold transition-all border-2 ${copied === monicaInfo.number ? 'bg-[#6B7A50] text-white border-[#6B7A50]' : 'bg-white/10 border-white/20 hover:border-white text-white'}`}
+            className={`flex items-center justify-between w-full px-4 py-3 rounded-xl font-bold transition-all border-2 ${copied === monicaInfo.number ? 'bg-[#6B7A50] text-white border-[#6B7A50]' : 'bg-white/10 border-white/20 hover:border-white text-white'} cursor-pointer`}
           >
             <span className="text-base tracking-widest">{monicaInfo.number}</span>
             {copied === monicaInfo.number ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-4 h-4 opacity-50" />}
@@ -154,10 +154,10 @@ function DonationDetails({ monicaInfo, copied, copyToClipboard, setSelectedQr }:
         </div>
 
         <div className="space-y-1">
-          <p className="text-[9px] font-bold uppercase tracking-tighter text-[#EAE4D9]/70 ml-1">Llave de Bre-B</p>
+          <p className="text-[14px] font-bold uppercase text-white ml-1">Llave de Bre-B</p>
           <button 
             onClick={(e) => { e.stopPropagation(); copyToClipboard(monicaInfo.brebeKey); }}
-            className={`flex items-center justify-between w-full px-4 py-3 rounded-xl font-bold transition-all border-2 ${copied === monicaInfo.brebeKey ? 'bg-[#6B7A50] text-white border-[#6B7A50]' : 'bg-white/10 border-white/20 hover:border-white text-white'}`}
+            className={`flex items-center justify-between w-full px-4 py-3 rounded-xl font-bold transition-all border-2 ${copied === monicaInfo.brebeKey ? 'bg-[#6B7A50] text-white border-[#6B7A50]' : 'bg-white/10 border-white/20 hover:border-white text-white'} cursor-pointer `}
           >
             <span className="text-base tracking-widest">{monicaInfo.brebeKey}</span>
             {copied === monicaInfo.brebeKey ? <CheckCircle2 className="w-5 h-5" /> : <Copy className="w-4 h-4 opacity-50" />}
@@ -166,7 +166,7 @@ function DonationDetails({ monicaInfo, copied, copyToClipboard, setSelectedQr }:
       </div>
 
       <button 
-        className="w-full mt-2 flex items-center justify-center gap-2 py-3 bg-white text-[#D36B42] rounded-xl font-bold text-sm shadow-md hover:bg-[#F4F1EA] transition-all group/qr-btn"
+        className="w-full mt-2 flex items-center justify-center gap-2 py-3 bg-white text-[#D36B42] rounded-xl font-bold text-sm shadow-md hover:bg-[#F4F1EA] transition-all group/qr-btn cursor-pointer"
         onClick={() => setSelectedQr(monicaInfo.qr)}
       >
         Ver QR de Nequi <Maximize2 className="w-4 h-4 group-hover/qr-btn:scale-110 transition-transform" />
