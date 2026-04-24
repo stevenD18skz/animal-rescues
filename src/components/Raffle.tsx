@@ -5,8 +5,8 @@ import { Heart, Copy, CheckCircle2, Ticket, Trophy, Calendar, DollarSign, AlertC
 import Image from "next/image";
 
 export default function Raffle() {
-  // Números vendidos (según la imagen: 15, 24, 31, 50, 58)
-  const [soldNumbers] = useState<number[]>([15, 24, 31, 50, 55, 58 ,67]);
+  // Números vendidos registrados
+  const [soldNumbers] = useState<number[]>([1, 10, 11, 15, 23, 24, 28, 31, 50, 55, 58, 67, 69, 98]);
   const [copied, setCopied] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
