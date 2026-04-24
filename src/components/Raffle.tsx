@@ -214,7 +214,7 @@ export default function Raffle() {
 
                 <button
                   onClick={() => handleBuyNumber()}
-                  className="w-full bg-[#3F787A] hover:bg-[#2A5253] text-[#F4F1EA] py-5 rounded-[2rem] font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl hover:-translate-y-1 flex items-center justify-center gap-3 group cursor-pointer"
+                  className="w-full bg-[#3F787A] hover:bg-[#2A5253] text-[#F4F1EA] py-5 rounded-[2rem] font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-2xl flex items-center justify-center gap-3 group cursor-pointer"
                 >
                   <Ticket className="w-6 h-6 group-hover:rotate-12 transition-transform" />
                   Comprar por WhatsApp
