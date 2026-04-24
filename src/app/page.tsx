@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Story from "@/components/Story";
 import HowToHelp from "@/components/HowToHelp";
+import Raffle from "@/components/Raffle";
 import Gallery from "@/components/Gallery";
 import Footer from "@/components/Footer";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <main>
         <Hero />
         <HowToHelp />
+        <Raffle />
         <Story />
         <Gallery />
       </main>
