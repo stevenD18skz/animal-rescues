@@ -40,6 +40,13 @@ export default function Story() {
     },
     {
       step: "06",
+      date: "23 de Abril, 2026",
+      title: "Rifa y Solidaridad",
+      description: "Gracias a la increíble ayuda recibida, Taylor sigue estable en su hogar de paso preparándose para su cirugía. Hoy lanzamos oficialmente su rifa solidaria, uniendo a toda la comunidad por su salud.",
+      media: { type: "image", src: "/taylor/brochure-raffle.jpeg" }
+    },
+    {
+      step: "07",
       date: "El Futuro...",
       title: "La Historia por Venir",
       description: "La cirugía y la recuperación serán los siguientes pasos. Con tu ayuda, el próximo capítulo será su sanación definitiva y la búsqueda de un hogar para siempre.",
