@@ -132,7 +132,7 @@ function DonationDetails({ monicaInfo, copied, copyToClipboard, setSelectedQr }:
   return (
     <div className="w-full h-full flex flex-col justify-between gap-4">
       <div className="flex items-center gap-3 mb-2">
-        <div className="w-10 h-10 relative bg-white rounded-lg p-1">
+        <div className="w-10 h-10 relative rounded-lg p-1">
           <Image src="/logos/nequi-logo.png" alt="Nequi Logo" fill sizes="40px" className="object-contain" />
         </div>
         <div>

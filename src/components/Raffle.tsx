@@ -109,7 +109,7 @@ export default function Raffle() {
                 <Calendar className="w-8 h-8" strokeWidth={2} />
               </div>
               <div>
-                <p className="text-xs opacity-90 font-bold uppercase tracking-wider">Fecha Sorteo</p>
+                <p className="text-xs opacity-90 font-bold uppercase tracking-wider">Fecha Sorteo (loteria Del Valle)</p>
                 <p className="text-2xl font-bold font-serif">
                   {raffleInfo.drawDate}
                 </p>
@@ -170,7 +170,7 @@ export default function Raffle() {
                           ${
                             isSold
                               ? "bg-[#D36B42] text-white cursor-not-allowed shadow-inner"
-                              : "bg-[#F4F1EA] text-[#2C2A28] border border-[#EAE4D9] hover:scale-110 hover:shadow-lg hover:bg-[#3F787A] hover:text-white hover:border-[#3F787A] cursor-pointer"
+                              : "bg-[#E5F3F3]/40 shadow-md text-[#2C2A28] border-2 border-[#3F787A] hover:scale-110 hover:shadow-lg hover:bg-[#3F787A] hover:text-white hover:border-[#3F787A] cursor-pointer"
                           }
                         `}
                       >
