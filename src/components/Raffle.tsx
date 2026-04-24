@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Raffle() {
   // Números vendidos (según la imagen: 15, 24, 31, 50, 58)
-  const [soldNumbers] = useState<number[]>([15, 24, 31, 50, 58]);
+  const [soldNumbers] = useState<number[]>([15, 24, 31, 50, 55, 58 ,67]);
   const [copied, setCopied] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
